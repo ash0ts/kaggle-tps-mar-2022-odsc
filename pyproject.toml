@@ -1,8 +1,8 @@
 [tool.poetry]
 name = "kaggle-tps-mar-2022-odsc"
 version = "0.1.0"
-description = ""
-authors = ["Anish Shah <93145909+ash0ts@users.noreply.github.com>"]
+description = "Using PyCaret, W&B, and Prefect to show how to orchestrate reproducible AutoML experiments on the Tabular Playground Series - March 2022 on Kaggle"
+authors = ["Anish Shah <anish@wandb.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
