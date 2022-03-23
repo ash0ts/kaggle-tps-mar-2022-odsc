@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+python-dotenv = "*"
+prefect = {extras = ["full"], version = "*"}
+kaggle = "*"
+pandas-profiling = "*"
+pycaret = {extras = ["full"], version = "*"}
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"

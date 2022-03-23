@@ -156,3 +156,4 @@ wandb/
 artifacts/
 catboost_info/
 *.pkl
+*.html
