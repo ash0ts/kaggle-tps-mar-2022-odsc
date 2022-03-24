@@ -9,8 +9,10 @@ prefect = {extras = ["full"], version = "*"}
 kaggle = "*"
 pandas-profiling = "*"
 pycaret = {extras = ["full"], version = "*"}
+wandb = "*"
 
 [dev-packages]
+autopep8 = "*"
 
 [requires]
 python_version = "3.9"
