@@ -48,7 +48,7 @@ def set_run_config(RUN_TYPE: str = "local") -> RunConfig:
 
 def set_storage(flow_name: str) -> GitHub:
     GITHUB_FLOW_REPO = os.environ["GITHUB_FLOW_REPO"]
-    GITHUB_ACCESS_TOKEN = os.environ["GITHUB_ACCESS_TOKEN"]
+    GITHUB_ACCESS_TOKEN = "GITHUB_ACCESS_TOKEN"
 
     return GitHub(
         repo=GITHUB_FLOW_REPO,

@@ -2,10 +2,10 @@ import wandb
 from prefect import task, Flow
 from prefect.executors import LocalExecutor
 from kaggle.api.kaggle_api_extended import KaggleApi
-from utils import add_convert_for_wandb
+from flow_utilities import add_convert_for_wandb
 from zipfile import ZipFile
 import os
-from prefect_configs import competition, project_name, set_storage, set_run_config
+from flow_utilities import competition, project_name, set_storage, set_run_config
 
 # TODO: Have switch to turn off prefect task given condition
 # TODO: Split into collection of digestible tasks and let a run encapsulate a flow?
@@ -60,7 +60,7 @@ def download_and_log_kaggle_data(competition: str = "tabular-playground-series-m
 # TODO: Abstract away the project name for the flow
 
 
-def configure_flow(FLOW_NAME: str = "1_download_and_log_kaggle_data", RUN_TYPE: str = "docker"):
+def configure_flow(FLOW_NAME: str = "1_download_and_log_kaggle_data", RUN_TYPE: str = "local"):
     with Flow(FLOW_NAME,
               executor=LocalExecutor(),
               storage=set_storage(FLOW_NAME),

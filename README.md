@@ -4,6 +4,7 @@
 ## Prefect Instructions
 prefect backend cloud
 prefect agent docker start -l "LABEL"
+access_token_secret (str, optional): The name of a Prefect secret that contains a GitHub access token to use when loading flows from this storage.
 
 ## GCP Instructions to build image (Windows)
 ```
