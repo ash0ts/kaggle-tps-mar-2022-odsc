@@ -62,7 +62,7 @@ def download_and_log_kaggle_data(competition: str = "tabular-playground-series-m
 
 def configure_flow(FLOW_NAME: str = "1_download_and_log_kaggle_data", RUN_TYPE: str = "local"):
     with Flow(FLOW_NAME,
-              executor=LocalExecutor(),
+              #   executor=LocalExecutor(),
               storage=set_storage(FLOW_NAME),
               run_config=set_run_config(RUN_TYPE)) as flow:
         flow.add_edge(competition, download_and_log_kaggle_data)

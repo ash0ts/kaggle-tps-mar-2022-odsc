@@ -5,7 +5,7 @@ name = "pypi"
 
 [packages]
 python-dotenv = "*"
-prefect = {extras = ["full"], version = "*"}
+prefect = {extras = ["github"], version = "*"}
 kaggle = "*"
 pandas-profiling = "*"
 pycaret = {extras = ["full"], version = "*"}
@@ -13,6 +13,7 @@ wandb = "*"
 
 [dev-packages]
 autopep8 = "*"
+jupyterlab = "*"
 
 [requires]
 python_version = "3.9"
